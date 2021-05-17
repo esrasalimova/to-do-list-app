@@ -1,11 +1,11 @@
 //1. Adding a new item to the list:
-
+ function newItem() {
   let li = $('<li></li>');
   let inputValue = $('#input').val();
   li.append(inputValue);
 
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Please write something!");
   } else {
     $('#list').append(li);
   }
@@ -27,3 +27,4 @@
  		li.addClass("delete")
  	}
    $('#list').sortable();
+ }
